@@ -12,11 +12,27 @@ body {
   font-weight: 100;
 }
 
+h1 {
+	text-shadow: 1px 1px 2px rgba(252, 252, 252, 1);
+	color: #152235;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
 h2 {
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: tomato;
+}
+
+h2:not(:nth-child(2n+1))  {
+		margin-top: 4em;
+	}
+	
+h3 {
+	font-weight: 400;
 }
 
 /* Link Styles */
@@ -26,8 +42,10 @@ a {
   color: #ff9904;
 }
 a:hover {
-  color: #6633ff;
+  color: #533a9f;
 }
+
+
 
 /* Section Styles */
 
@@ -64,7 +82,7 @@ a:hover {
   font-weight:100;
 }
 .nav a:hover {
-  color: #00D4E8;
+  color: #fff;
 }
 
 header {
@@ -90,6 +108,11 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+header.sub {
+ min-height: 250px;
+}
+
 .tag {
   color: #008E9B;
   padding: 10px;
@@ -119,7 +142,16 @@ h1.name {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: tomato;
+}
+
+
+li.edu h3 {
+	margin-top: 2em;
+}
+
+li.edu {
+	list-style-type: none;
 }
 
 ul.skills {
@@ -165,9 +197,9 @@ a.social {
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
   opacity: .4;
   transition: all .5s;
 }
@@ -227,10 +259,10 @@ a.social:hover {
 	}
 	
  .card {
-  border-bottom: 2px solid #27a9b5;
-  border-left: 2px solid #27a9b5;
-  border-radius: 6px;
- }
+	border-bottom: 2px solid #27a9b5;
+	border-left: 2px solid #27a9b5;
+	border-radius: 6px;
+	}
 	
   footer {
     font-size: 1.3em;
