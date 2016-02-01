@@ -97,7 +97,7 @@ header {
 header {
   line-height: 1.5;
 }
-header .profile-image {
+header .profile-image, .pooch {
   margin-top: 50px;
   width: 150px;
   height: 150px;
@@ -107,8 +107,24 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  border: 3px solid #27a9b5;
 }
 
+.pooch {
+	border: 2px solid #27a9b5;
+	margin: -0.5em 0 0 -4em;
+	display: inline;
+	float: left;
+}
+
+.pooch:hover {
+	transform: scale(1.2) rotate(5deg);
+	border: 2px solid tomato;
+}
+
+img.pooch {
+	margin-right: 1em;
+}
 header.sub {
  min-height: 250px;
 }
@@ -156,7 +172,7 @@ li.edu {
 
 ul.skills {
   padding: 0;
-  text-align: center;
+
 }
 
 .skills li {
